@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body class="bg-purple-300 text-center">
+    Welcome to the homepage!
+
+    <h5>What's the color of the sky?</h5>
+    <form action="/result" method="post">
+        <input type="text" name="color" id="">
+        <button>Go!</button>
+    </form>
+
+    <br>
+
+    <p>Today's weather is <%= weather %></p>
+
+    <% pets.forEach((pet) => { %> 
+        <li><%= pet.name %> (<%=pet.type%>)</li>
+    <% }) %>
+</body>
+</html>
