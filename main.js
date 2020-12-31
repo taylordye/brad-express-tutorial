@@ -47,6 +47,7 @@ app.post('/result', (req, res,) => {
     }
 });
 
+// Comment
 app.get('/about', (req, res) => {
     res.send('Thanks for learning more about us.');
 });
